@@ -1,0 +1,85 @@
+button.btn:focus {
+    box-shadow: none;
+}
+
+.stripe-app .header {
+    background: url("../Images/bg-image.jpg");
+    height: 80vh;
+    color: #fff;
+}
+.stripe-app .header .overlay {
+    background-color: rgb(30, 27, 73, 0.8);
+}
+.stripe-app .header .navbar .logo a {
+    color: #fff;
+}
+.stripe-app .header .navbar .logo a p:first-letter {
+    color: var(--primary-color);
+}
+.stripe-app .header .navbar .nav ul li {
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+.stripe-app .header .navbar .nav ul li:hover {
+    color: var(--primary-color);
+}
+.stripe-app .header .navbar .nav ul li:first-letter {
+    text-transform: capitalize;
+}
+.stripe-app .header .content {
+    height: calc(100% - 92px);
+}
+.stripe-app .header .content .btn {
+    background-color: var(--primary-color);
+    width: 200px;
+    margin: 0 auto;
+}
+.stripe-app .sidebar {
+    transition: all 0.3s ease-in-out;
+    transform: translate(-50%, -50%) scale(0);
+}
+.stripe-app .sidebar.show-sidebar {
+    transform: translate(-50%, -50%) scale(1);
+}
+.stripe-app .sidebar .sub-menu h4::first-letter {
+    text-transform: capitalize;
+}
+.stripe-app .sidebar .sub-menu ul li a {
+    color: var(--second-color);
+    transition: all 0.2s ease-in-out;
+}
+.stripe-app .sidebar .sub-menu ul li a:hover {
+    color: var(--primary-color);
+}
+.stripe-app .submenu {
+    top: 4rem;
+    left: 50%;
+    padding: 20px;
+    min-width: 200px;
+    display: none;
+    transform: translateX(-50%);
+    transition: all 0.3s ease-in-out;
+}
+.stripe-app .submenu:before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 10px solid;
+    transition: all 0.1s ease-in-out;
+    border-color: transparent transparent #fff transparent;
+}
+.stripe-app .submenu.show-submenu {
+    display: block;
+}
+.stripe-app .submenu .content h4::first-letter {
+    text-transform: capitalize;
+}
+.stripe-app .submenu .content ul li a {
+    color: var(--second-color);
+    transition: all 0.2s ease-in-out;
+}
+.stripe-app .submenu .content ul li a:hover {
+    color: var(--primary-color);
+}
